@@ -7,42 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B0249C120E81B9200A2A2CF /* UITableView+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0249BE20E81B9200A2A2CF /* UITableView+Animation.swift */; };
+		2B0249C220E81B9200A2A2CF /* UIStoryboard+Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0249BF20E81B9200A2A2CF /* UIStoryboard+Loader.swift */; };
+		2B0249C320E81B9200A2A2CF /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0249C020E81B9200A2A2CF /* Color.swift */; };
+		2B36CD9920E7F7A4004DB034 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B36CD9520E7F7A3004DB034 /* APIConstants.swift */; };
+		2B36CD9A20E7F7A4004DB034 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B36CD9620E7F7A3004DB034 /* APIManager.swift */; };
+		2B36CDA320E7F8E0004DB034 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B36CDA220E7F8E0004DB034 /* BaseVC.swift */; };
+		2BEEEEE720E7FEB300984B17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BEEEEE620E7FEB300984B17 /* Assets.xcassets */; };
+		2BEEEEE920E8034300984B17 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEEEEE820E8034300984B17 /* WelcomeVC.swift */; };
+		2BEEEEEB20E8039900984B17 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEEEEEA20E8039900984B17 /* SignupVC.swift */; };
+		BB4D89D3C4D366FEE09509FC /* Pods_HealthHunt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12A4D23FB990309C3A5C044F /* Pods_HealthHunt.framework */; };
 		EF393C6620E4EB54000A9878 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF393C6520E4EB54000A9878 /* AppDelegate.swift */; };
-		EF393C6820E4EB54000A9878 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF393C6720E4EB54000A9878 /* ViewController.swift */; };
-		EF393C6B20E4EB54000A9878 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF393C6920E4EB54000A9878 /* Main.storyboard */; };
-		EF393C6E20E4EB54000A9878 /* Sample_Healthhunt_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF393C6C20E4EB54000A9878 /* Sample_Healthhunt_iOS.xcdatamodeld */; };
-		EF393C7020E4EB54000A9878 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF393C6F20E4EB54000A9878 /* Assets.xcassets */; };
+		EF393C6B20E4EB54000A9878 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF393C6920E4EB54000A9878 /* Login.storyboard */; };
+		EF393C6E20E4EB54000A9878 /* HealthHunt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF393C6C20E4EB54000A9878 /* HealthHunt.xcdatamodeld */; };
 		EF393C7320E4EB54000A9878 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF393C7120E4EB54000A9878 /* LaunchScreen.storyboard */; };
-		EF393C7F20E4EBC8000A9878 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF393C7D20E4EBC8000A9878 /* LoginViewController.swift */; };
+		EF393C7F20E4EBC8000A9878 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF393C7D20E4EBC8000A9878 /* LoginVC.swift */; };
 		EF393C8220E6846A000A9878 /* facebook_google_view.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF393C8120E6846A000A9878 /* facebook_google_view.xib */; };
 		EF393C8420E68674000A9878 /* FacebookGoogleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF393C8320E68674000A9878 /* FacebookGoogleView.swift */; };
-		EF393C8820E6A7EA000A9878 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF393C8720E6A7EA000A9878 /* LoginViewController.xib */; };
 		EF393C8E20E6C0D9000A9878 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF393C8D20E6C0D9000A9878 /* ServiceManager.swift */; };
-		EF393C9120E766F2000A9878 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF393C9020E766F2000A9878 /* GlobalConstants.swift */; };
-		EF393C9920E76BE9000A9878 /* HHUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF393C9820E76BE9000A9878 /* HHUtility.swift */; };
+		EF393C9120E766F2000A9878 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF393C9020E766F2000A9878 /* Constants.swift */; };
 		EF393C9C20E77641000A9878 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF393C9B20E77641000A9878 /* LoginRequest.swift */; };
-		EF393C9F20E77936000A9878 /* Objective-CBridgingHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = EF393C9E20E77936000A9878 /* Objective-CBridgingHeader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EF393C6220E4EB53000A9878 /* Healthhunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Healthhunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11227170A9ADB62AAA15EE4F /* Pods-HealthHunt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthHunt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealthHunt/Pods-HealthHunt.debug.xcconfig"; sourceTree = "<group>"; };
+		12A4D23FB990309C3A5C044F /* Pods_HealthHunt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthHunt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B0249BE20E81B9200A2A2CF /* UITableView+Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Animation.swift"; sourceTree = "<group>"; };
+		2B0249BF20E81B9200A2A2CF /* UIStoryboard+Loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Loader.swift"; sourceTree = "<group>"; };
+		2B0249C020E81B9200A2A2CF /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		2B36CD9520E7F7A3004DB034 /* APIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		2B36CD9620E7F7A3004DB034 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		2B36CDA220E7F8E0004DB034 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		2BEEEEE620E7FEB300984B17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2BEEEEE820E8034300984B17 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
+		2BEEEEEA20E8039900984B17 /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
+		E91FF4A8C39BFF767EFFFF8B /* Pods-HealthHunt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthHunt.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealthHunt/Pods-HealthHunt.release.xcconfig"; sourceTree = "<group>"; };
+		EF393C6220E4EB53000A9878 /* HealthHunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthHunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF393C6520E4EB54000A9878 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EF393C6720E4EB54000A9878 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EF393C6A20E4EB54000A9878 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EF393C6D20E4EB54000A9878 /* Sample_Healthhunt_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sample_Healthhunt_iOS.xcdatamodel; sourceTree = "<group>"; };
-		EF393C6F20E4EB54000A9878 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF393C6A20E4EB54000A9878 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
+		EF393C6D20E4EB54000A9878 /* HealthHunt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HealthHunt.xcdatamodel; sourceTree = "<group>"; };
 		EF393C7220E4EB54000A9878 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF393C7420E4EB54000A9878 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EF393C7D20E4EBC8000A9878 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EF393C7D20E4EBC8000A9878 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		EF393C8120E6846A000A9878 /* facebook_google_view.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = facebook_google_view.xib; sourceTree = "<group>"; };
 		EF393C8320E68674000A9878 /* FacebookGoogleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookGoogleView.swift; sourceTree = "<group>"; };
-		EF393C8720E6A7EA000A9878 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		EF393C8D20E6C0D9000A9878 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
-		EF393C9020E766F2000A9878 /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
-		EF393C9820E76BE9000A9878 /* HHUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHUtility.swift; sourceTree = "<group>"; };
+		EF393C9020E766F2000A9878 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EF393C9B20E77641000A9878 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
-		EF393C9D20E77936000A9878 /* Healthhunt-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Healthhunt-Bridging-Header.h"; sourceTree = "<group>"; };
-		EF393C9E20E77936000A9878 /* Objective-CBridgingHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Objective-CBridgingHeader.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,105 +61,177 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB4D89D3C4D366FEE09509FC /* Pods_HealthHunt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B0249BD20E81B9200A2A2CF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2B0249BE20E81B9200A2A2CF /* UITableView+Animation.swift */,
+				2B0249BF20E81B9200A2A2CF /* UIStoryboard+Loader.swift */,
+				2B0249C020E81B9200A2A2CF /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2B36CD9420E7F7A3004DB034 /* Network Layer */ = {
+			isa = PBXGroup;
+			children = (
+				EF393C8D20E6C0D9000A9878 /* ServiceManager.swift */,
+				2B36CD9520E7F7A3004DB034 /* APIConstants.swift */,
+				2B36CD9620E7F7A3004DB034 /* APIManager.swift */,
+			);
+			path = "Network Layer";
+			sourceTree = "<group>";
+		};
+		2B36CD9720E7F7A3004DB034 /* Presentation Layer */ = {
+			isa = PBXGroup;
+			children = (
+				2B36CD9B20E7F7AD004DB034 /* Views */,
+				2B36CD9C20E7F7B5004DB034 /* ViewControllers */,
+			);
+			path = "Presentation Layer";
+			sourceTree = "<group>";
+		};
+		2B36CD9820E7F7A4004DB034 /* Bussiness Layer */ = {
+			isa = PBXGroup;
+			children = (
+				2B0249BD20E81B9200A2A2CF /* Extensions */,
+				EF393C8920E6C057000A9878 /* Model */,
+			);
+			path = "Bussiness Layer";
+			sourceTree = "<group>";
+		};
+		2B36CD9B20E7F7AD004DB034 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2B36CD9E20E7F7D6004DB034 /* Custom views */,
+				2B36CD9D20E7F7CC004DB034 /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2B36CD9C20E7F7B5004DB034 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2B36CDA120E7F8C7004DB034 /* BaseVC */,
+				2B36CD9F20E7F7E3004DB034 /* Login Flow */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2B36CD9D20E7F7CC004DB034 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				EF393C6920E4EB54000A9878 /* Login.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2B36CD9E20E7F7D6004DB034 /* Custom views */ = {
+			isa = PBXGroup;
+			children = (
+				EF393C8120E6846A000A9878 /* facebook_google_view.xib */,
+				EF393C8320E68674000A9878 /* FacebookGoogleView.swift */,
+			);
+			path = "Custom views";
+			sourceTree = "<group>";
+		};
+		2B36CD9F20E7F7E3004DB034 /* Login Flow */ = {
+			isa = PBXGroup;
+			children = (
+				2BEEEEE820E8034300984B17 /* WelcomeVC.swift */,
+				EF393C7D20E4EBC8000A9878 /* LoginVC.swift */,
+				2BEEEEEA20E8039900984B17 /* SignupVC.swift */,
+			);
+			path = "Login Flow";
+			sourceTree = "<group>";
+		};
+		2B36CDA020E7F80A004DB034 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				EF393C7120E4EB54000A9878 /* LaunchScreen.storyboard */,
+				2BEEEEE620E7FEB300984B17 /* Assets.xcassets */,
+				EF393C7420E4EB54000A9878 /* Info.plist */,
+				EF393C6C20E4EB54000A9878 /* HealthHunt.xcdatamodeld */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		2B36CDA120E7F8C7004DB034 /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				2B36CDA220E7F8E0004DB034 /* BaseVC.swift */,
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		8E34401A356D5A5A6B549711 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12A4D23FB990309C3A5C044F /* Pods_HealthHunt.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9BA1D645DD80F6EBE33CA86 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				11227170A9ADB62AAA15EE4F /* Pods-HealthHunt.debug.xcconfig */,
+				E91FF4A8C39BFF767EFFFF8B /* Pods-HealthHunt.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EF393C5920E4EB53000A9878 = {
 			isa = PBXGroup;
 			children = (
-				EF393C6420E4EB54000A9878 /* Healthhunt */,
+				EF393C6420E4EB54000A9878 /* HealthHunt */,
 				EF393C6320E4EB53000A9878 /* Products */,
+				D9BA1D645DD80F6EBE33CA86 /* Pods */,
+				8E34401A356D5A5A6B549711 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		EF393C6320E4EB53000A9878 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EF393C6220E4EB53000A9878 /* Healthhunt.app */,
+				EF393C6220E4EB53000A9878 /* HealthHunt.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EF393C6420E4EB54000A9878 /* Healthhunt */ = {
+		EF393C6420E4EB54000A9878 /* HealthHunt */ = {
 			isa = PBXGroup;
 			children = (
-				EF393C8A20E6C072000A9878 /* Presenter */,
-				EF393C8920E6C057000A9878 /* Model */,
-				EF393C7A20E4EB93000A9878 /* LoginScreen */,
 				EF393C6520E4EB54000A9878 /* AppDelegate.swift */,
-				EF393C6720E4EB54000A9878 /* ViewController.swift */,
-				EF393C6920E4EB54000A9878 /* Main.storyboard */,
-				EF393C6F20E4EB54000A9878 /* Assets.xcassets */,
-				EF393C7120E4EB54000A9878 /* LaunchScreen.storyboard */,
-				EF393C7420E4EB54000A9878 /* Info.plist */,
-				EF393C6C20E4EB54000A9878 /* Sample_Healthhunt_iOS.xcdatamodeld */,
+				2B36CD9820E7F7A4004DB034 /* Bussiness Layer */,
+				2B36CD9420E7F7A3004DB034 /* Network Layer */,
+				2B36CD9720E7F7A3004DB034 /* Presentation Layer */,
+				2B36CDA020E7F80A004DB034 /* Supporting files */,
 			);
-			path = Healthhunt;
-			sourceTree = "<group>";
-		};
-		EF393C7A20E4EB93000A9878 /* LoginScreen */ = {
-			isa = PBXGroup;
-			children = (
-				EF393C8720E6A7EA000A9878 /* LoginViewController.xib */,
-				EF393C7D20E4EBC8000A9878 /* LoginViewController.swift */,
-				EF393C8120E6846A000A9878 /* facebook_google_view.xib */,
-				EF393C8320E68674000A9878 /* FacebookGoogleView.swift */,
-			);
-			path = LoginScreen;
+			path = HealthHunt;
 			sourceTree = "<group>";
 		};
 		EF393C8920E6C057000A9878 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				EF393C9A20E7760C000A9878 /* Login */,
-				EF393C9520E76ABD000A9878 /* Utility */,
 				EF393C8F20E7668E000A9878 /* Global Constants */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		EF393C8A20E6C072000A9878 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				EF393CA020E7794D000A9878 /* Bridge */,
-				EF393C8C20E6C0A5000A9878 /* ServiceManager */,
-				EF393C8B20E6C07A000A9878 /* LoginPresenter */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		EF393C8B20E6C07A000A9878 /* LoginPresenter */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = LoginPresenter;
-			sourceTree = "<group>";
-		};
-		EF393C8C20E6C0A5000A9878 /* ServiceManager */ = {
-			isa = PBXGroup;
-			children = (
-				EF393C8D20E6C0D9000A9878 /* ServiceManager.swift */,
-			);
-			path = ServiceManager;
-			sourceTree = "<group>";
-		};
 		EF393C8F20E7668E000A9878 /* Global Constants */ = {
 			isa = PBXGroup;
 			children = (
-				EF393C9020E766F2000A9878 /* GlobalConstants.swift */,
+				EF393C9020E766F2000A9878 /* Constants.swift */,
 			);
 			path = "Global Constants";
-			sourceTree = "<group>";
-		};
-		EF393C9520E76ABD000A9878 /* Utility */ = {
-			isa = PBXGroup;
-			children = (
-				EF393C9820E76BE9000A9878 /* HHUtility.swift */,
-			);
-			path = Utility;
 			sourceTree = "<group>";
 		};
 		EF393C9A20E7760C000A9878 /* Login */ = {
@@ -159,33 +242,28 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
-		EF393CA020E7794D000A9878 /* Bridge */ = {
-			isa = PBXGroup;
-			children = (
-				EF393C9E20E77936000A9878 /* Objective-CBridgingHeader.m */,
-				EF393C9D20E77936000A9878 /* Healthhunt-Bridging-Header.h */,
-			);
-			path = Bridge;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EF393C6120E4EB53000A9878 /* Healthhunt */ = {
+		EF393C6120E4EB53000A9878 /* HealthHunt */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EF393C7720E4EB54000A9878 /* Build configuration list for PBXNativeTarget "Healthhunt" */;
+			buildConfigurationList = EF393C7720E4EB54000A9878 /* Build configuration list for PBXNativeTarget "HealthHunt" */;
 			buildPhases = (
+				2BEEEEE520E7FDE000984B17 /* Swift Lint */,
+				7718CA29A1121F8128CCB3E2 /* [CP] Check Pods Manifest.lock */,
 				EF393C5E20E4EB53000A9878 /* Sources */,
 				EF393C5F20E4EB53000A9878 /* Frameworks */,
 				EF393C6020E4EB53000A9878 /* Resources */,
+				54DDBEC6B080CAAE2AF31EDF /* [CP] Embed Pods Frameworks */,
+				D74210775E9A5B35F0B55925 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Healthhunt;
+			name = HealthHunt;
 			productName = Sample_Healthhunt_iOS;
-			productReference = EF393C6220E4EB53000A9878 /* Healthhunt.app */;
+			productReference = EF393C6220E4EB53000A9878 /* HealthHunt.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -195,7 +273,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Abhishek Kumar";
 				TargetAttributes = {
 					EF393C6120E4EB53000A9878 = {
@@ -205,7 +283,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EF393C5D20E4EB53000A9878 /* Build configuration list for PBXProject "Healthhunt" */;
+			buildConfigurationList = EF393C5D20E4EB53000A9878 /* Build configuration list for PBXProject "HealthHunt" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -218,7 +296,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EF393C6120E4EB53000A9878 /* Healthhunt */,
+				EF393C6120E4EB53000A9878 /* HealthHunt */,
 			);
 		};
 /* End PBXProject section */
@@ -228,30 +306,110 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF393C8820E6A7EA000A9878 /* LoginViewController.xib in Resources */,
 				EF393C7320E4EB54000A9878 /* LaunchScreen.storyboard in Resources */,
 				EF393C8220E6846A000A9878 /* facebook_google_view.xib in Resources */,
-				EF393C7020E4EB54000A9878 /* Assets.xcassets in Resources */,
-				EF393C6B20E4EB54000A9878 /* Main.storyboard in Resources */,
+				2BEEEEE720E7FEB300984B17 /* Assets.xcassets in Resources */,
+				EF393C6B20E4EB54000A9878 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BEEEEE520E7FDE000984B17 /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
+		};
+		54DDBEC6B080CAAE2AF31EDF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HealthHunt/Pods-HealthHunt-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HealthHunt/Pods-HealthHunt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7718CA29A1121F8128CCB3E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HealthHunt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D74210775E9A5B35F0B55925 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HealthHunt/Pods-HealthHunt-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EF393C5E20E4EB53000A9878 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BEEEEEB20E8039900984B17 /* SignupVC.swift in Sources */,
+				2B0249C220E81B9200A2A2CF /* UIStoryboard+Loader.swift in Sources */,
 				EF393C9C20E77641000A9878 /* LoginRequest.swift in Sources */,
-				EF393C7F20E4EBC8000A9878 /* LoginViewController.swift in Sources */,
-				EF393C9F20E77936000A9878 /* Objective-CBridgingHeader.m in Sources */,
-				EF393C6820E4EB54000A9878 /* ViewController.swift in Sources */,
-				EF393C6E20E4EB54000A9878 /* Sample_Healthhunt_iOS.xcdatamodeld in Sources */,
+				2B36CDA320E7F8E0004DB034 /* BaseVC.swift in Sources */,
+				EF393C7F20E4EBC8000A9878 /* LoginVC.swift in Sources */,
+				EF393C6E20E4EB54000A9878 /* HealthHunt.xcdatamodeld in Sources */,
+				2B36CD9A20E7F7A4004DB034 /* APIManager.swift in Sources */,
 				EF393C6620E4EB54000A9878 /* AppDelegate.swift in Sources */,
-				EF393C9120E766F2000A9878 /* GlobalConstants.swift in Sources */,
+				2B0249C320E81B9200A2A2CF /* Color.swift in Sources */,
+				EF393C9120E766F2000A9878 /* Constants.swift in Sources */,
+				2B36CD9920E7F7A4004DB034 /* APIConstants.swift in Sources */,
+				2B0249C120E81B9200A2A2CF /* UITableView+Animation.swift in Sources */,
 				EF393C8420E68674000A9878 /* FacebookGoogleView.swift in Sources */,
-				EF393C9920E76BE9000A9878 /* HHUtility.swift in Sources */,
+				2BEEEEE920E8034300984B17 /* WelcomeVC.swift in Sources */,
 				EF393C8E20E6C0D9000A9878 /* ServiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,12 +417,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EF393C6920E4EB54000A9878 /* Main.storyboard */ = {
+		EF393C6920E4EB54000A9878 /* Login.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				EF393C6A20E4EB54000A9878 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Login.storyboard;
 			sourceTree = "<group>";
 		};
 		EF393C7120E4EB54000A9878 /* LaunchScreen.storyboard */ = {
@@ -292,6 +450,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -299,6 +458,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -326,7 +486,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -349,6 +509,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -356,6 +517,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -377,7 +539,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -387,15 +549,16 @@
 		};
 		EF393C7820E4EB54000A9878 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11227170A9ADB62AAA15EE4F /* Pods-HealthHunt.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Healthhunt/Info.plist;
+				DEVELOPMENT_TEAM = B9Q8D63652;
+				INFOPLIST_FILE = "HealthHunt/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = in.healthhunt;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HealthHunt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Healthhunt/Presenter/Bridge/Healthhunt-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -404,15 +567,16 @@
 		};
 		EF393C7920E4EB54000A9878 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E91FF4A8C39BFF767EFFFF8B /* Pods-HealthHunt.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Healthhunt/Info.plist;
+				DEVELOPMENT_TEAM = B9Q8D63652;
+				INFOPLIST_FILE = "HealthHunt/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = in.healthhunt;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HealthHunt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Healthhunt/Presenter/Bridge/Healthhunt-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -421,7 +585,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EF393C5D20E4EB53000A9878 /* Build configuration list for PBXProject "Healthhunt" */ = {
+		EF393C5D20E4EB53000A9878 /* Build configuration list for PBXProject "HealthHunt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EF393C7520E4EB54000A9878 /* Debug */,
@@ -430,7 +594,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EF393C7720E4EB54000A9878 /* Build configuration list for PBXNativeTarget "Healthhunt" */ = {
+		EF393C7720E4EB54000A9878 /* Build configuration list for PBXNativeTarget "HealthHunt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EF393C7820E4EB54000A9878 /* Debug */,
@@ -442,13 +606,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		EF393C6C20E4EB54000A9878 /* Sample_Healthhunt_iOS.xcdatamodeld */ = {
+		EF393C6C20E4EB54000A9878 /* HealthHunt.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				EF393C6D20E4EB54000A9878 /* Sample_Healthhunt_iOS.xcdatamodel */,
+				EF393C6D20E4EB54000A9878 /* HealthHunt.xcdatamodel */,
 			);
-			currentVersion = EF393C6D20E4EB54000A9878 /* Sample_Healthhunt_iOS.xcdatamodel */;
-			path = Sample_Healthhunt_iOS.xcdatamodeld;
+			currentVersion = EF393C6D20E4EB54000A9878 /* HealthHunt.xcdatamodel */;
+			path = HealthHunt.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

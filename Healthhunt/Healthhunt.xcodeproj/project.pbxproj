@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF393C6620E4EB54000A9878 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF393C6520E4EB54000A9878 /* AppDelegate.swift */; };
+		EF393C6820E4EB54000A9878 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF393C6720E4EB54000A9878 /* ViewController.swift */; };
+		EF393C6B20E4EB54000A9878 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF393C6920E4EB54000A9878 /* Main.storyboard */; };
+		EF393C6E20E4EB54000A9878 /* Sample_Healthhunt_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF393C6C20E4EB54000A9878 /* Sample_Healthhunt_iOS.xcdatamodeld */; };
+		EF393C7020E4EB54000A9878 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF393C6F20E4EB54000A9878 /* Assets.xcassets */; };
+		EF393C7320E4EB54000A9878 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF393C7120E4EB54000A9878 /* LaunchScreen.storyboard */; };
+		EF393C7F20E4EBC8000A9878 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF393C7D20E4EBC8000A9878 /* LoginViewController.swift */; };
+		EF393C8220E6846A000A9878 /* facebook_google_view.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF393C8120E6846A000A9878 /* facebook_google_view.xib */; };
+		EF393C8420E68674000A9878 /* FacebookGoogleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF393C8320E68674000A9878 /* FacebookGoogleView.swift */; };
+		EF393C8820E6A7EA000A9878 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF393C8720E6A7EA000A9878 /* LoginViewController.xib */; };
+		EF393C8E20E6C0D9000A9878 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF393C8D20E6C0D9000A9878 /* ServiceManager.swift */; };
+		EF393C9120E766F2000A9878 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF393C9020E766F2000A9878 /* GlobalConstants.swift */; };
+		EF393C9920E76BE9000A9878 /* HHUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF393C9820E76BE9000A9878 /* HHUtility.swift */; };
+		EF393C9C20E77641000A9878 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF393C9B20E77641000A9878 /* LoginRequest.swift */; };
+		EF393C9F20E77936000A9878 /* Objective-CBridgingHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = EF393C9E20E77936000A9878 /* Objective-CBridgingHeader.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EF393C6220E4EB53000A9878 /* Healthhunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Healthhunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF393C6520E4EB54000A9878 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF393C6720E4EB54000A9878 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF393C6A20E4EB54000A9878 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF393C6D20E4EB54000A9878 /* Sample_Healthhunt_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sample_Healthhunt_iOS.xcdatamodel; sourceTree = "<group>"; };
+		EF393C6F20E4EB54000A9878 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF393C7220E4EB54000A9878 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF393C7420E4EB54000A9878 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF393C7D20E4EBC8000A9878 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EF393C8120E6846A000A9878 /* facebook_google_view.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = facebook_google_view.xib; sourceTree = "<group>"; };
+		EF393C8320E68674000A9878 /* FacebookGoogleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookGoogleView.swift; sourceTree = "<group>"; };
+		EF393C8720E6A7EA000A9878 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		EF393C8D20E6C0D9000A9878 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		EF393C9020E766F2000A9878 /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
+		EF393C9820E76BE9000A9878 /* HHUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHUtility.swift; sourceTree = "<group>"; };
+		EF393C9B20E77641000A9878 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		EF393C9D20E77936000A9878 /* Healthhunt-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Healthhunt-Bridging-Header.h"; sourceTree = "<group>"; };
+		EF393C9E20E77936000A9878 /* Objective-CBridgingHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Objective-CBridgingHeader.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF393C5F20E4EB53000A9878 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF393C5920E4EB53000A9878 = {
+			isa = PBXGroup;
+			children = (
+				EF393C6420E4EB54000A9878 /* Healthhunt */,
+				EF393C6320E4EB53000A9878 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF393C6320E4EB53000A9878 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF393C6220E4EB53000A9878 /* Healthhunt.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF393C6420E4EB54000A9878 /* Healthhunt */ = {
+			isa = PBXGroup;
+			children = (
+				EF393C8A20E6C072000A9878 /* Presenter */,
+				EF393C8920E6C057000A9878 /* Model */,
+				EF393C7A20E4EB93000A9878 /* LoginScreen */,
+				EF393C6520E4EB54000A9878 /* AppDelegate.swift */,
+				EF393C6720E4EB54000A9878 /* ViewController.swift */,
+				EF393C6920E4EB54000A9878 /* Main.storyboard */,
+				EF393C6F20E4EB54000A9878 /* Assets.xcassets */,
+				EF393C7120E4EB54000A9878 /* LaunchScreen.storyboard */,
+				EF393C7420E4EB54000A9878 /* Info.plist */,
+				EF393C6C20E4EB54000A9878 /* Sample_Healthhunt_iOS.xcdatamodeld */,
+			);
+			path = Healthhunt;
+			sourceTree = "<group>";
+		};
+		EF393C7A20E4EB93000A9878 /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				EF393C8720E6A7EA000A9878 /* LoginViewController.xib */,
+				EF393C7D20E4EBC8000A9878 /* LoginViewController.swift */,
+				EF393C8120E6846A000A9878 /* facebook_google_view.xib */,
+				EF393C8320E68674000A9878 /* FacebookGoogleView.swift */,
+			);
+			path = LoginScreen;
+			sourceTree = "<group>";
+		};
+		EF393C8920E6C057000A9878 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF393C9A20E7760C000A9878 /* Login */,
+				EF393C9520E76ABD000A9878 /* Utility */,
+				EF393C8F20E7668E000A9878 /* Global Constants */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF393C8A20E6C072000A9878 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EF393CA020E7794D000A9878 /* Bridge */,
+				EF393C8C20E6C0A5000A9878 /* ServiceManager */,
+				EF393C8B20E6C07A000A9878 /* LoginPresenter */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		EF393C8B20E6C07A000A9878 /* LoginPresenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LoginPresenter;
+			sourceTree = "<group>";
+		};
+		EF393C8C20E6C0A5000A9878 /* ServiceManager */ = {
+			isa = PBXGroup;
+			children = (
+				EF393C8D20E6C0D9000A9878 /* ServiceManager.swift */,
+			);
+			path = ServiceManager;
+			sourceTree = "<group>";
+		};
+		EF393C8F20E7668E000A9878 /* Global Constants */ = {
+			isa = PBXGroup;
+			children = (
+				EF393C9020E766F2000A9878 /* GlobalConstants.swift */,
+			);
+			path = "Global Constants";
+			sourceTree = "<group>";
+		};
+		EF393C9520E76ABD000A9878 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				EF393C9820E76BE9000A9878 /* HHUtility.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		EF393C9A20E7760C000A9878 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EF393C9B20E77641000A9878 /* LoginRequest.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		EF393CA020E7794D000A9878 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				EF393C9E20E77936000A9878 /* Objective-CBridgingHeader.m */,
+				EF393C9D20E77936000A9878 /* Healthhunt-Bridging-Header.h */,
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF393C6120E4EB53000A9878 /* Healthhunt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF393C7720E4EB54000A9878 /* Build configuration list for PBXNativeTarget "Healthhunt" */;
+			buildPhases = (
+				EF393C5E20E4EB53000A9878 /* Sources */,
+				EF393C5F20E4EB53000A9878 /* Frameworks */,
+				EF393C6020E4EB53000A9878 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Healthhunt;
+			productName = Sample_Healthhunt_iOS;
+			productReference = EF393C6220E4EB53000A9878 /* Healthhunt.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF393C5A20E4EB53000A9878 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Abhishek Kumar";
+				TargetAttributes = {
+					EF393C6120E4EB53000A9878 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EF393C5D20E4EB53000A9878 /* Build configuration list for PBXProject "Healthhunt" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF393C5920E4EB53000A9878;
+			productRefGroup = EF393C6320E4EB53000A9878 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF393C6120E4EB53000A9878 /* Healthhunt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF393C6020E4EB53000A9878 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF393C8820E6A7EA000A9878 /* LoginViewController.xib in Resources */,
+				EF393C7320E4EB54000A9878 /* LaunchScreen.storyboard in Resources */,
+				EF393C8220E6846A000A9878 /* facebook_google_view.xib in Resources */,
+				EF393C7020E4EB54000A9878 /* Assets.xcassets in Resources */,
+				EF393C6B20E4EB54000A9878 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF393C5E20E4EB53000A9878 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF393C9C20E77641000A9878 /* LoginRequest.swift in Sources */,
+				EF393C7F20E4EBC8000A9878 /* LoginViewController.swift in Sources */,
+				EF393C9F20E77936000A9878 /* Objective-CBridgingHeader.m in Sources */,
+				EF393C6820E4EB54000A9878 /* ViewController.swift in Sources */,
+				EF393C6E20E4EB54000A9878 /* Sample_Healthhunt_iOS.xcdatamodeld in Sources */,
+				EF393C6620E4EB54000A9878 /* AppDelegate.swift in Sources */,
+				EF393C9120E766F2000A9878 /* GlobalConstants.swift in Sources */,
+				EF393C8420E68674000A9878 /* FacebookGoogleView.swift in Sources */,
+				EF393C9920E76BE9000A9878 /* HHUtility.swift in Sources */,
+				EF393C8E20E6C0D9000A9878 /* ServiceManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EF393C6920E4EB54000A9878 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF393C6A20E4EB54000A9878 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF393C7120E4EB54000A9878 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF393C7220E4EB54000A9878 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF393C7520E4EB54000A9878 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF393C7620E4EB54000A9878 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF393C7820E4EB54000A9878 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Healthhunt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = in.healthhunt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Healthhunt/Presenter/Bridge/Healthhunt-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF393C7920E4EB54000A9878 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Healthhunt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = in.healthhunt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Healthhunt/Presenter/Bridge/Healthhunt-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF393C5D20E4EB53000A9878 /* Build configuration list for PBXProject "Healthhunt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF393C7520E4EB54000A9878 /* Debug */,
+				EF393C7620E4EB54000A9878 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF393C7720E4EB54000A9878 /* Build configuration list for PBXNativeTarget "Healthhunt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF393C7820E4EB54000A9878 /* Debug */,
+				EF393C7920E4EB54000A9878 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EF393C6C20E4EB54000A9878 /* Sample_Healthhunt_iOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EF393C6D20E4EB54000A9878 /* Sample_Healthhunt_iOS.xcdatamodel */,
+			);
+			currentVersion = EF393C6D20E4EB54000A9878 /* Sample_Healthhunt_iOS.xcdatamodel */;
+			path = Sample_Healthhunt_iOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EF393C5A20E4EB53000A9878 /* Project object */;
+}

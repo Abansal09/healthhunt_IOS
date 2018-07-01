@@ -1,6 +1,6 @@
 //
 //  LoginRequest.swift
-//  Sample_Healthhunt_iOS
+//  HealthHunt
 //
 //  Created by Abhishek Kumar on 6/30/18.
 //  Copyright © 2018 Abhishek Kumar. All rights reserved.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct LoginRequest: Codable {
+struct Login: Codable {
     let email: String?
     let password: String?
     let social_network: String?

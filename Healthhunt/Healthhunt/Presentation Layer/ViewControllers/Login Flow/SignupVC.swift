@@ -34,55 +34,53 @@ class SignupVC: BaseVC {
         super.didReceiveMemoryWarning()
     }
     
-    func setUI() {
+    private func setUI() {
         
-        let text = NSMutableAttributedString(string: "By signing up, you agree to ")
-        text.addAttribute(NSAttributedStringKey.font,
-                          value: UIFont.systemFont(ofSize: 12),
-                          range: NSRange(location: 0, length: text.length))
+        btnSignup.backgroundColor = .themeColor
+        btnSignup.layer.shadowOffset = CGSize(width: 0, height: 2)
+        btnSignup.layer.shadowOpacity = 0.2
         
-        let termsAndConditions = NSMutableAttributedString(string: "Terms and Conditions")
-        termsAndConditions.addAttribute(NSAttributedStringKey.font,
-                                      value: UIFont.systemFont(ofSize: 12),
-                                      range: NSRange(location: 0, length: termsAndConditions.length))
-        
-        // Adding the link interaction to the interactable text
-        termsAndConditions.addAttribute(NSAttributedStringKey.link,
-                                      value: "termsAndConditions",
-                                      range: NSRange(location: 0, length: termsAndConditions.length))
-        
-        let textAnd = NSMutableAttributedString(string: " and ")
-        text.addAttribute(NSAttributedStringKey.font,
-                          value: UIFont.systemFont(ofSize: 12),
-                          range: NSRange(location: 0, length: text.length))
-        
-        let privacyPolicy = NSMutableAttributedString(string: "Privacy Policy")
-        privacyPolicy.addAttribute(NSAttributedStringKey.font,
-                                        value: UIFont.systemFont(ofSize: 12),
-                                        range: NSRange(location: 0, length: privacyPolicy.length))
-        
-        privacyPolicy.addAttribute(NSAttributedStringKey.link,
-                                        value: "privacyPolicy",
-                                        range: NSRange(location: 0, length: privacyPolicy.length))
-        
-        text.append(termsAndConditions)
-        text.append(textAnd)
-        text.append(privacyPolicy)
-
-        let paragraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.alignment = NSTextAlignment.center
-        text.addAttribute(kCTParagraphStyleAttributeName as NSAttributedStringKey, value: paragraphStyle, range: NSMakeRange(0, text.length))
-        text.addAttributes([NSAttributedStringKey(rawValue: NSAttributedStringKey.foregroundColor.rawValue): UIColor.lightGray], range: NSMakeRange(0, text.length))
+        textViewTermsConditions.attributedText = HHUtility.getTermsAndConditions()
         textViewTermsConditions.linkTextAttributes = [NSAttributedStringKey.foregroundColor.rawValue: UIColor.darkGray]
-        textViewTermsConditions.attributedText = text
     }
     
     @IBAction func actionSignup(_ sender: UIButton) {
+        
+        if Validation.validte(email: txtEmail.text!, password: txtPassword.text!) {
+            
+            view.endEditing(true)
+            apiSignup()
+        }
     }
     
     @IBAction func actionOffer(_ sender: UIButton) {
     }
+    
+    // MARK: API
+
+    func apiSignup() {
+        
+        ProgressUtility.shared.showLoader()
+        
+        let param: [String: String] = ["email": txtEmail.text ?? "",
+                                       "password": txtPassword.text ?? "",
+                                       "social_network": "",
+                                       "social_token": ""]
+        
+        APIManager.postAPI(AppURL.signup, parameters: param, tag: .signup) { (response, error) in
+            
+            ProgressUtility.shared.hideLoader()
+            
+            if (error != nil) {
+                AlertUtility.sclAlertError(error!)
+            } else {
+                print(response)
+            }
+        }
+    }
 }
+
+// MARK: Text Field Method
 
 extension SignupVC {
     
@@ -97,6 +95,8 @@ extension SignupVC {
         return true
     }
 }
+
+// MARK: Text View Method
 
 extension SignupVC: UITextViewDelegate {
     

@@ -14,6 +14,8 @@ class BaseVC: UIViewController {
 
     private var tap = UITapGestureRecognizer()
 
+    // MARK: View Life Cycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

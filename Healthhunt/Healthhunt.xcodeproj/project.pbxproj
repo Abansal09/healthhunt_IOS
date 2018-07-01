@@ -13,6 +13,10 @@
 		2B36CD9920E7F7A4004DB034 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B36CD9520E7F7A3004DB034 /* APIConstants.swift */; };
 		2B36CD9A20E7F7A4004DB034 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B36CD9620E7F7A3004DB034 /* APIManager.swift */; };
 		2B36CDA320E7F8E0004DB034 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B36CDA220E7F8E0004DB034 /* BaseVC.swift */; };
+		2B527C7720E849DD000A2D46 /* HHUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B527C7620E849DD000A2D46 /* HHUtility.swift */; };
+		2B527C7A20E85057000A2D46 /* ProgressUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B527C7920E85056000A2D46 /* ProgressUtility.swift */; };
+		2B527C7C20E85166000A2D46 /* AlertUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B527C7B20E85165000A2D46 /* AlertUtility.swift */; };
+		2B527C7F20E85B3B000A2D46 /* Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B527C7E20E85B3B000A2D46 /* Validations.swift */; };
 		2BEEEEE720E7FEB300984B17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BEEEEE620E7FEB300984B17 /* Assets.xcassets */; };
 		2BEEEEE920E8034300984B17 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEEEEE820E8034300984B17 /* WelcomeVC.swift */; };
 		2BEEEEEB20E8039900984B17 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEEEEEA20E8039900984B17 /* SignupVC.swift */; };
@@ -24,9 +28,8 @@
 		EF393C7F20E4EBC8000A9878 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF393C7D20E4EBC8000A9878 /* LoginVC.swift */; };
 		EF393C8220E6846A000A9878 /* facebook_google_view.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF393C8120E6846A000A9878 /* facebook_google_view.xib */; };
 		EF393C8420E68674000A9878 /* FacebookGoogleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF393C8320E68674000A9878 /* FacebookGoogleView.swift */; };
-		EF393C8E20E6C0D9000A9878 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF393C8D20E6C0D9000A9878 /* ServiceManager.swift */; };
 		EF393C9120E766F2000A9878 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF393C9020E766F2000A9878 /* Constants.swift */; };
-		EF393C9C20E77641000A9878 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF393C9B20E77641000A9878 /* LoginRequest.swift */; };
+		EF393C9C20E77641000A9878 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF393C9B20E77641000A9878 /* Login.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,11 @@
 		2B36CD9520E7F7A3004DB034 /* APIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		2B36CD9620E7F7A3004DB034 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		2B36CDA220E7F8E0004DB034 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		2B527C7620E849DD000A2D46 /* HHUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHUtility.swift; sourceTree = "<group>"; };
+		2B527C7820E84AB8000A2D46 /* HealthHunt-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HealthHunt-Bridging-Header.h"; sourceTree = "<group>"; };
+		2B527C7920E85056000A2D46 /* ProgressUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressUtility.swift; sourceTree = "<group>"; };
+		2B527C7B20E85165000A2D46 /* AlertUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertUtility.swift; sourceTree = "<group>"; };
+		2B527C7E20E85B3B000A2D46 /* Validations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validations.swift; sourceTree = "<group>"; };
 		2BEEEEE620E7FEB300984B17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BEEEEE820E8034300984B17 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		2BEEEEEA20E8039900984B17 /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
@@ -51,9 +59,8 @@
 		EF393C7D20E4EBC8000A9878 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		EF393C8120E6846A000A9878 /* facebook_google_view.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = facebook_google_view.xib; sourceTree = "<group>"; };
 		EF393C8320E68674000A9878 /* FacebookGoogleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookGoogleView.swift; sourceTree = "<group>"; };
-		EF393C8D20E6C0D9000A9878 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		EF393C9020E766F2000A9878 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		EF393C9B20E77641000A9878 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		EF393C9B20E77641000A9878 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +88,6 @@
 		2B36CD9420E7F7A3004DB034 /* Network Layer */ = {
 			isa = PBXGroup;
 			children = (
-				EF393C8D20E6C0D9000A9878 /* ServiceManager.swift */,
 				2B36CD9520E7F7A3004DB034 /* APIConstants.swift */,
 				2B36CD9620E7F7A3004DB034 /* APIManager.swift */,
 			);
@@ -100,6 +106,8 @@
 		2B36CD9820E7F7A4004DB034 /* Bussiness Layer */ = {
 			isa = PBXGroup;
 			children = (
+				2B527C7D20E85B18000A2D46 /* Common */,
+				2B527C7520E849DD000A2D46 /* Utility */,
 				2B0249BD20E81B9200A2A2CF /* Extensions */,
 				EF393C8920E6C057000A9878 /* Model */,
 			);
@@ -158,6 +166,7 @@
 				2BEEEEE620E7FEB300984B17 /* Assets.xcassets */,
 				EF393C7420E4EB54000A9878 /* Info.plist */,
 				EF393C6C20E4EB54000A9878 /* HealthHunt.xcdatamodeld */,
+				2B527C7820E84AB8000A2D46 /* HealthHunt-Bridging-Header.h */,
 			);
 			path = "Supporting files";
 			sourceTree = "<group>";
@@ -168,6 +177,24 @@
 				2B36CDA220E7F8E0004DB034 /* BaseVC.swift */,
 			);
 			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		2B527C7520E849DD000A2D46 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				2B527C7620E849DD000A2D46 /* HHUtility.swift */,
+				2B527C7920E85056000A2D46 /* ProgressUtility.swift */,
+				2B527C7B20E85165000A2D46 /* AlertUtility.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		2B527C7D20E85B18000A2D46 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2B527C7E20E85B3B000A2D46 /* Validations.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		8E34401A356D5A5A6B549711 /* Frameworks */ = {
@@ -237,7 +264,7 @@
 		EF393C9A20E7760C000A9878 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				EF393C9B20E77641000A9878 /* LoginRequest.swift */,
+				EF393C9B20E77641000A9878 /* Login.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -249,8 +276,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF393C7720E4EB54000A9878 /* Build configuration list for PBXNativeTarget "HealthHunt" */;
 			buildPhases = (
-				2BEEEEE520E7FDE000984B17 /* Swift Lint */,
 				7718CA29A1121F8128CCB3E2 /* [CP] Check Pods Manifest.lock */,
+				2BEEEEE520E7FDE000984B17 /* Swift Lint */,
 				EF393C5E20E4EB53000A9878 /* Sources */,
 				EF393C5F20E4EB53000A9878 /* Frameworks */,
 				EF393C6020E4EB53000A9878 /* Resources */,
@@ -339,17 +366,23 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-HealthHunt/Pods-HealthHunt-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/NotificationBannerSwift/NotificationBannerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NotificationBannerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -398,19 +431,22 @@
 			files = (
 				2BEEEEEB20E8039900984B17 /* SignupVC.swift in Sources */,
 				2B0249C220E81B9200A2A2CF /* UIStoryboard+Loader.swift in Sources */,
-				EF393C9C20E77641000A9878 /* LoginRequest.swift in Sources */,
+				EF393C9C20E77641000A9878 /* Login.swift in Sources */,
 				2B36CDA320E7F8E0004DB034 /* BaseVC.swift in Sources */,
+				2B527C7F20E85B3B000A2D46 /* Validations.swift in Sources */,
 				EF393C7F20E4EBC8000A9878 /* LoginVC.swift in Sources */,
+				2B527C7C20E85166000A2D46 /* AlertUtility.swift in Sources */,
 				EF393C6E20E4EB54000A9878 /* HealthHunt.xcdatamodeld in Sources */,
 				2B36CD9A20E7F7A4004DB034 /* APIManager.swift in Sources */,
 				EF393C6620E4EB54000A9878 /* AppDelegate.swift in Sources */,
 				2B0249C320E81B9200A2A2CF /* Color.swift in Sources */,
+				2B527C7A20E85057000A2D46 /* ProgressUtility.swift in Sources */,
 				EF393C9120E766F2000A9878 /* Constants.swift in Sources */,
 				2B36CD9920E7F7A4004DB034 /* APIConstants.swift in Sources */,
 				2B0249C120E81B9200A2A2CF /* UITableView+Animation.swift in Sources */,
 				EF393C8420E68674000A9878 /* FacebookGoogleView.swift in Sources */,
+				2B527C7720E849DD000A2D46 /* HHUtility.swift in Sources */,
 				2BEEEEE920E8034300984B17 /* WelcomeVC.swift in Sources */,
-				EF393C8E20E6C0D9000A9878 /* ServiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,7 +594,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HealthHunt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "HealthHunt/Supporting files/HealthHunt-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -576,7 +612,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HealthHunt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "HealthHunt/Supporting files/HealthHunt-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

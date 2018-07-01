@@ -20,13 +20,20 @@ class APIManager: NSObject {
         var headerToken: [String: String] = [:]
 
         if header {
-
-//            headerToken = ["AccessToken":System.profile.token!]
+            let utcTime = HHUtility.getUTCTime()
+            let authCode = authUrl + privateKey + utcTime
+            
+            headerToken = [authToken: HHUtility.getMD5(authCode),
+                           timeStamp: utcTime,
+                           deviceType: type,
+                           apiVersion: serverVersion,
+                           contentType: contentTypeVal
+            ]
         }
 
         print(parameters)
 
-        let api = Alamofire.request(AppURL.base + apiURl, method: .post, parameters: parameters, encoding: URLEncoding.default, headers: header ? headerToken:nil)
+        let api = Alamofire.request(AppURL.base + apiURl, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: header ? headerToken:nil)
 
         api.responseJSON { (response) in
 
@@ -35,7 +42,7 @@ class APIManager: NSObject {
 
                 if let response = JSON as? [String: Any] {
 
-                    if response["status"] as! Bool == true {
+                    if let status = response["status"] as? Bool {
 
                         switch tag {
 

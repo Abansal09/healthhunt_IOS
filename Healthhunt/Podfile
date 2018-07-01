@@ -11,6 +11,7 @@ target 'HealthHunt' do
   pod 'SCLAlertView'
   pod 'IQKeyboardManager'
   pod 'NVActivityIndicatorView'
+  pod 'NotificationBannerSwift'
   pod 'SwiftLint'
   
 end

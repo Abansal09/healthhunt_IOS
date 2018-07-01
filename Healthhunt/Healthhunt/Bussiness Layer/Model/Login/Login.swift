@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct LoginRequest: Codable {
+struct Login: Codable {
     let email: String?
     let password: String?
     let social_network: String?

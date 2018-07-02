@@ -2,8 +2,8 @@
 //  Color.swift
 //  SportLotus
 //
-//  Created by Rajmani on 16/06/18.
-//  Copyright © 2018 Socialinfotech 16. All rights reserved.
+//  Created by Abhishek Kumar on 16/06/18.
+//  Copyright © 2018 Abhishek Kumar 16. All rights reserved.
 //
 
 import UIKit

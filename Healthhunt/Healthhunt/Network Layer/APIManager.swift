@@ -2,8 +2,8 @@
 //  ResponsePackage.swift
 //  Jumeirah
 //
-//  Created by Rajmani on 21/02/17.
-//  Copyright © 2016 ASPL. All rights reserved.
+//  Created by Abhishek Kumar on 21/02/17.
+//  Copyright © 2016 Abhishek Kumar. All rights reserved.
 //
 
 import Foundation
@@ -12,7 +12,7 @@ import ObjectMapper
 
 class APIManager: NSObject {
 
-    class func postAPI(_ apiURl: String, parameters: [String: Any], header: Bool = true, tag: URLTag, completionHandler: @escaping (_ Result: Any?, _ Error: String?) -> Void) {
+    class func postAPI(_ apiURl: String, parameters: [String: Any], header: Bool = true, tag: API.URLTag, completionHandler: @escaping (_ Result: Any?, _ Error: String?) -> Void) {
 
         var finalData: Any? = nil
         var theError: String? = nil
@@ -21,47 +21,40 @@ class APIManager: NSObject {
 
         if header {
             let utcTime = HHUtility.getUTCTime()
-            let authCode = authUrl + privateKey + utcTime
+            let authCode = API.HeaderKey.authUrl + apiURl + API.HeaderKey.privateKey + utcTime
             
-            headerToken = [authToken: HHUtility.getMD5(authCode),
-                           timeStamp: utcTime,
-                           deviceType: type,
-                           apiVersion: serverVersion,
-                           contentType: contentTypeVal
+            headerToken = [API.HeaderKey.authToken: HHUtility.getMD5(authCode),
+                           API.HeaderKey.timeStamp: utcTime,
+                           API.HeaderKey.deviceType: API.HeaderKey.type,
+                           API.HeaderKey.apiVersion: API.HeaderKey.serverVersion,
+                           API.HeaderKey.contentType: API.HeaderKey.contentTypeVal
             ]
         }
 
+        print(headerToken)
         print(parameters)
-
-        let api = Alamofire.request(AppURL.base + apiURl, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: header ? headerToken:nil)
+        print(API.URL.base + apiURl)
+        
+        let api = Alamofire.request(API.URL.base + apiURl, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: header ? headerToken:nil)
 
         api.responseJSON { (response) in
 
             if let JSON = response.result.value {
                 print("JSON: \(JSON)")
-
+              
                 if let response = JSON as? [String: Any] {
 
-                    if let status = response["status"] as? Bool {
-
+                    if (response["status"] as? Bool)! {
+                        
                         switch tag {
 
-//                        case .login:
-//                            if let data = response["data"] as? [String:Any] {
-//                                APIManager.setUserResponse(data: data)
-//                            }
-//
-//                        case .registration:
-//
-//                            if let data = response["data"] as? [String:Any] {
-//                                APIManager.setUserResponse(data: data)
-//                            }
+                        case .login:
+                            // Method to parse response
+                            break;
 
-//                        case .allMessages:
-//
-//                            if let data = response["data"] as? [[String:Any]]  {
-//                                finalData = Mapper<MessageList>().mapArray(JSONArray: data)
-//                            }
+                        case .signup:
+                            // Method to parse response
+                            break;
 
                         default:
                             print("NO TAGS MATCHED")
@@ -70,12 +63,6 @@ class APIManager: NSObject {
                     } else {
 
                         theError = response["message"] as? String
-
-                        if theError == "User does not exists!"{
-
-//                            System.userDefaults.removeObject(forKey: "token")
-                            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "logout"), object: nil, userInfo: nil)
-                        }
                     }
                 }
             } else if let ERROR = response.result.error {
@@ -89,19 +76,14 @@ class APIManager: NSObject {
         }
     }
 
-    class func GetAPI(_ apiUrl: String, _ tag: URLTag, _ header: Bool = false, completionHandler: @escaping (_ Result: Any?, _ Error: String?) -> Void) {
+    class func GetAPI(_ apiUrl: String, _ tag: API.URLTag, _ header: Bool = false, completionHandler: @escaping (_ Result: Any?, _ Error: String?) -> Void) {
 
         var finalData: Any? = nil
         var theError: String? = nil
 
         var headerToken: [String: String] = [:]
 
-        if header {
-
-//            headerToken = ["AccessToken":System.profile.token!]
-        }
-
-        let api = Alamofire.request(AppURL.base + apiUrl, method: .get, parameters: nil, encoding: URLEncoding.default, headers: header ? headerToken : nil)
+        let api = Alamofire.request(API.URL.base + apiUrl, method: .get, parameters: nil, encoding: URLEncoding.default, headers: header ? headerToken : nil)
 
         api.responseJSON { (response) in
 
@@ -116,7 +98,6 @@ class APIManager: NSObject {
                         switch tag {
 
                         default:
-
                             print("NO TAGS MATCHED")
                         }
                     } else {
@@ -127,8 +108,6 @@ class APIManager: NSObject {
                                 return
                             }
                         }
-
-                        //                        CommonFunction.shared.sclAlertError("Error")
                     }
                 }
             } else if let ERROR = response.result.error {
@@ -142,14 +121,14 @@ class APIManager: NSObject {
         }
     }
 
-    class func postMultipartAPI(_ apiURl: String, parameters: [String: String], tag: URLTag, fileData: Data, completionHandler: @escaping (_ Result: Any?, _ Error: String?) -> Void) {
+    class func postMultipartAPI(_ apiURl: String, parameters: [String: String], tag: API.URLTag, fileData: Data, completionHandler: @escaping (_ Result: Any?, _ Error: String?) -> Void) {
 
         let finalData: Any? = nil
         var theError: String? = nil
 
         let headerToken: [String: String] = ["AccessToken": ""]
 
-        let fullURL = try! URLRequest(url: AppURL.base + apiURl, method: .post, headers: headerToken)
+        let fullURL = try! URLRequest(url: API.URL.base + apiURl, method: .post, headers: headerToken)
 
         Alamofire.upload(multipartFormData: { (multipartFormData) in
 
@@ -173,7 +152,6 @@ class APIManager: NSObject {
 
                                 default:
                                     print("default tag")
-//                                    theError = "Unidentified Request"
                                 }
                             } else {
                                 //success false

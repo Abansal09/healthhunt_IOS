@@ -248,17 +248,17 @@
 			isa = PBXGroup;
 			children = (
 				EF393C9A20E7760C000A9878 /* Login */,
-				EF393C8F20E7668E000A9878 /* Global Constants */,
+				EF393C8F20E7668E000A9878 /* Constants */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		EF393C8F20E7668E000A9878 /* Global Constants */ = {
+		EF393C8F20E7668E000A9878 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
 				EF393C9020E766F2000A9878 /* Constants.swift */,
 			);
-			path = "Global Constants";
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		EF393C9A20E7760C000A9878 /* Login */ = {

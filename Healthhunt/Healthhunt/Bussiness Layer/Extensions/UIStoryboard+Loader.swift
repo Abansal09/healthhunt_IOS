@@ -2,8 +2,8 @@
 //  UIStoryboard+Loader.swift
 //  EazyWallet
 //
-//  Created by Rajmani on 04/05/18.
-//  Copyright © 2018 Rajmani Kushwaha. All rights reserved.
+//  Created by Abhishek Kumar on 04/05/18.
+//  Copyright © 2018 Abhishek Kumar. All rights reserved.
 //
 
 import UIKit

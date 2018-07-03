@@ -2,7 +2,7 @@
 //  SignupVC.swift
 //  HealthHunt
 //
-//  Created by Rajmani on 30/06/18.
+//  Created by Abhishek Kumar on 30/06/18.
 //  Copyright © 2018 Abhishek Kumar. All rights reserved.
 //
 
@@ -62,19 +62,22 @@ class SignupVC: BaseVC {
         
         ProgressUtility.shared.showLoader()
         
-        let param: [String: String] = ["email": txtEmail.text ?? "",
-                                       "password": txtPassword.text ?? "",
-                                       "social_network": "",
-                                       "social_token": ""]
+        let param: [String: String] = [API.Key.Signup.email: txtEmail.text ?? "",
+                                       API.Key.Signup.password: txtPassword.text ?? "",
+                                       API.Key.Signup.name: "_iOS",
+                                       API.Key.Signup.gender: "_Male",
+                                       API.Key.Signup.social_token: "",
+                                       API.Key.Signup.social_network: ""]
         
-        APIManager.postAPI(AppURL.signup, parameters: param, tag: .signup) { (response, error) in
+        APIManager.postAPI(API.URL.signup, parameters: param, tag: .signup) { (response, error) in
             
             ProgressUtility.shared.hideLoader()
             
             if (error != nil) {
                 AlertUtility.sclAlertError(error!)
             } else {
-                print(response)
+                // Signup success
+                AlertUtility.sclAlertSuccess(Message.signupSuccess)
             }
         }
     }

@@ -2,8 +2,8 @@
 //  CommonFunction.swift
 //  MemoryHelper
 //
-//  Created by ChicMic on 01/06/17.
-//  Copyright © 2017 ChicMic. All rights reserved.
+//  Created by Abhishek Kumar on 01/06/17.
+//  Copyright © 2017 Abhishek Kumar. All rights reserved.
 //
 import UIKit
 import NVActivityIndicatorView
@@ -26,6 +26,19 @@ class AlertUtility: NSObject, NVActivityIndicatorViewable {
         
         DispatchQueue.main.async {
             alert1.showError("", subTitle: string, closeButtonTitle:"OK", timeout: nil, colorStyle: 0x9FCD33, colorTextButton: 0xFFFFFF, circleIconImage: UIImage(named:logo), animationStyle: SCLAnimationStyle.topToBottom)
+        }
+    }
+    
+    static func sclAlertSuccess(_ string: String) {
+        
+        let appearance = SCLAlertView.SCLAppearance(
+            showCircularIcon: false
+        )
+        
+        let alert1 = SCLAlertView(appearance: appearance)
+        
+        DispatchQueue.main.async {
+            alert1.showSuccess("", subTitle: string, closeButtonTitle:"OK", timeout: nil, colorStyle: 0x9FCD33, colorTextButton: 0xFFFFFF, circleIconImage: UIImage(named:logo), animationStyle: SCLAnimationStyle.topToBottom)
         }
     }
     

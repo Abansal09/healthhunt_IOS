@@ -2,7 +2,7 @@
 //  WelcomeVC.swift
 //  HealthHunt
 //
-//  Created by Rajmani on 30/06/18.
+//  Created by Abhishek Kumar on 30/06/18.
 //  Copyright © 2018 Abhishek Kumar. All rights reserved.
 //
 

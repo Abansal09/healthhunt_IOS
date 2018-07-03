@@ -69,19 +69,20 @@ extension LoginVC {
         
         ProgressUtility.shared.showLoader()
         
-        let param: [String: String] = ["email": txtEmail.text ?? "",
-                                       "password": txtPassword.text ?? "",
-                                       "social_network": "",
-                                       "social_token": ""]
+        let param: [String: String] = [API.Key.Login.email: txtEmail.text ?? "",
+                                       API.Key.Login.password: txtPassword.text ?? "",
+                                       API.Key.Login.social_network: "",
+                                       API.Key.Login.social_token: ""]
         
-        APIManager.postAPI(AppURL.login, parameters: param, tag: .login) { (response, error) in
+        APIManager.postAPI(API.URL.login, parameters: param, tag: .login) { (response, error) in
             
             ProgressUtility.shared.hideLoader()
             
             if (error != nil) {
                 AlertUtility.sclAlertError(error!)
             } else {
-                print(response as Any)
+                // Login success
+                AlertUtility.sclAlertSuccess(Message.loginSuccess)
             }
         }
     }
